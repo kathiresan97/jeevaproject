@@ -19,7 +19,7 @@ public static void main(String[] args) throws InterruptedException {
 	d.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	d.findElement(By.id("rs")).sendKeys("cycle");
 	d.findElement(By.xpath("//button[@type='submit']")).click();
-	d.findElement(By.xpath("//a[text()='Fuji Nevada 29 1.9 Hardtail Bike (2021)']")).click();
+	d.findElement(By.xpath("(//div[@class='bem-product-thumb--grid'])[1]")).click();
 	WebElement dpdnCycleSize = d.findElement(By.xpath("(//a[@class='bem-sku-selector__option-prompt'])[1]"));
 	dpdnCycleSize.click();
 	
