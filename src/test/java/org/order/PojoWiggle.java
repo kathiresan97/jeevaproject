@@ -19,6 +19,18 @@ public class PojoWiggle extends Login{
 	
 	@FindBy(id="qa-login")
 	private WebElement btnSign;
+	
+	@FindBy(id="DualRegisterEmailModel_Email")
+	private WebElement txtcreateAccmail;
+	
+	@FindBy(id="qa-dual-register")
+	private WebElement btnContn;
+	
+	@FindBy(id="rs")
+	private WebElement txtsearch;
+	
+	@FindBy (xpath="(//button[@type='submit'])[1]")
+	private WebElement btnsearch;
 
 	public WebElement getBtnYourAccount() {
 		return btnYourAccount;
@@ -34,6 +46,22 @@ public class PojoWiggle extends Login{
 
 	public WebElement getBtnSign() {
 		return btnSign;
+	}
+
+	public WebElement getTxtcreateAccmail() {
+		return txtcreateAccmail;
+	}
+
+	public WebElement getBtnContn() {
+		return btnContn;
+	}
+
+	public WebElement getTxtsearch() {
+		return txtsearch;
+	}
+
+	public WebElement getBtnsearch() {
+		return btnsearch;
 	}
 	
 	
